@@ -1,4 +1,4 @@
-FROM node:6.10.3
+FROM node:9.4.0
 
 RUN npm install --global npm@5.6.0
 
