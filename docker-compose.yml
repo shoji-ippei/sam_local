@@ -1,0 +1,9 @@
+demo:
+  build: .
+  environment:
+    NODE_ENV: development
+#  ports:
+#    - '3000:3000'
+  volumes:
+    - .:/func_name
+    - /func_name/node_modules

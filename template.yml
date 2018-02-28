@@ -1,15 +1,20 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Simple CRUD webservice. State is stored in a SimpleTable (DynamoDB) resource.
+Description: demo for AWS Lambda development at local
 Resources:
-  HelloWorld:
+  FunctionName:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      Runtime: nodejs4.3
+      Runtime: nodejs6.10
       Events:
         GetResource:
           Type: Api
           Properties:
             Path: /resource/{resourceId}
             Method: put
+      Timeout: 10
+      Environment:
+        Variables:
+          #set variables in env.json file
+          SAMPLE_KEY : !Ref SAMPLE_KEY

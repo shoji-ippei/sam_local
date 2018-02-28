@@ -1,0 +1,20 @@
+{
+  "name": "func_name",
+  "version": "1.0.0",
+  "description": "* [公式](https://www.docker.com/community-edition#/mac)から取得したDockerインストーラを利用してインストール",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.202.0",
+    "chai": "^4.1.2",
+    "sinon": "^4.4.2",
+    "sinon-chai": "^2.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
