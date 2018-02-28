@@ -41,5 +41,5 @@ nodeの環境に依存するパッケージがある場合、ローカルでv6.1
 Dockerを使わずにローカル環境でv6.10.3からテストを実行すればエラーは再現しなかった。
 ```
 $ docker-compose build
-$ docker-compose run ec2 npm test
+$ docker-compose run demo npm test
 ```
